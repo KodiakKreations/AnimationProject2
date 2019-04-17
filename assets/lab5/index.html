@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    main {
+        background-color:#838f8e;
+        height: 500px;
+
+    }
+
+#M {
+    display: block;
+    height:200px;
+    width: 200px;
+    position: relative;
+    top: 150px;
+    left: 200px;
+    background-image: url(img/M.svg);
+    animation: growM 1.5s infinite;
+}
+
+#K {
+    display: block;
+    height:200px;
+    width: 200px;
+    position: relative;
+    top: -50px;
+    left: 300px;
+    background-image: url(img/K.svg);
+    animation: moveK 1.5s infinite;
+}
+
+@keyframes growM {
+    0% {transform: scale(1); left: 200px}
+    50% {transform: rotate(280deg) scale(2.5); left: 280px;}
+    100% {transform: scale(1); left: 200px;}
+}
+
+@keyframes moveK {
+    0% {transform: scale(1); left: 300px}
+    50% {transform: scale(2); left: 800px;}
+    100% {transform: scale(1); left: 300px;}
+}
+    
+    </style>
+</head>
+<body>
+
+    <main>
+        <div id="M"></div>
+        <div id="K"></div>
+    </main>
+    
+</body>
+
+<script>
+
+
+</script>
+</html>
